@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.zhanyuzhen.memo.DisplayNote"
+    tools:showIn="@layout/activity_display_note">
+
+    <!--need search-->
+
+    <!--ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF9C8"
+        android:divider="#D3D3D3"
+        android:dividerHeight="1sp"
+        android:footerDividersEnabled="true"/-->
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/list"/>
+
+
+    <!--when no data to present, remain empty-->
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#FFF9C8"/>
+
+
+</RelativeLayout>

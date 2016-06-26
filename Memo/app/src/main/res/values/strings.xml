@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Memo</string>
+    <string name="action_settings">Settings</string>
+    <string name="notebook">Note</string>
+    <string name="date">倒數</string>
+    <string name="title_activity_display_note">DisplayNote</string>
+    <string name="title_activity_add_note">AddNote</string>
+    <string name="title">Title:</string>
+    <string name="no_title">Please Enter a Title</string>
+    <string name="store">Save</string>
+    <string name="exit">Exit</string>
+    <string name="Color">Color</string>
+    <string name="ColorChoose">Please Choose a Color</string>
+    <string name="Rose">#FF99CC</string>
+    <string name="Orange">#FFCC33</string>
+    <string name="Green">#CCFF00</string>
+    <string name="Purple">#CC99FF</string>
+    <string name="Tiffany">#99FFCC</string>
+    <string name="Blue">#66FFFF</string>
+    <string name="title_activity_countdown">Countdown</string>
+    <string name="title_activity_calendar">Calendar</string>
+</resources>

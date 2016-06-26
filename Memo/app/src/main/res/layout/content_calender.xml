@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.angelocsc.myapplication.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:clickable="false">
+
+
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:contextClickable="false"
+        android:focusedMonthDateColor="#f10909"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:selectedWeekBackgroundColor="#e81111"
+        android:unfocusedMonthDateColor="#f10707"
+        android:background="#96daff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/showtext"
+        android:layout_below="@+id/calendarView"
+        android:text="本日沒有安排行程"
+        android:visibility="invisible"
+        android:layout_alignRight="@+id/calendarView"
+        android:layout_alignEnd="@+id/calendarView"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editwhat"
+        android:layout_below="@+id/calendarView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/calendarView"
+        android:layout_alignEnd="@+id/calendarView"
+        android:visibility="invisible"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:text="" />
+
+</RelativeLayout>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63c1ba"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.zhanyuzhen.memo.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:weightSum="8"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:weightSum="2"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/memo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:background="#fdff8f"
+            android:textSize="40sp"
+            android:text="@string/notebook"
+            android:padding="10sp"
+            android:onClick="GoToNote">
+
+        </Button>
+
+        <Button
+            android:id="@+id/date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/memo"
+            android:background="#fdff8f"
+            android:textSize="40sp"
+            android:text="@string/date"
+            android:padding="10sp"
+            android:onClick="GoToCountdown"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+         <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             android:id="@android:id/list"/>
+
+
+         <!--when no data to present, remain empty-->
+    </LinearLayout>
+</LinearLayout>
